@@ -52,7 +52,6 @@ public class MemberTestCtrler extends HttpServlet {
 				beansMap.put(key, obj);	// map에 저장
 			}
 		}catch(Exception e) {e.printStackTrace();}
-		System.out.println("init");
 	}
 	
 	@Override

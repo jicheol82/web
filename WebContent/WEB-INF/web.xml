@@ -82,7 +82,7 @@
   	 	<servlet-name>eltest</servlet-name>
   	 	<url-pattern>/test.do</url-pattern>
   	 </servlet-mapping>
-  	 -->
+  	 
   	 <servlet>
   	 	<servlet-name>mvc</servlet-name>
   	 	<servlet-class>web.jsp0209.mvc.MemberTestCtrler</servlet-class>
@@ -95,4 +95,35 @@
   	 	<servlet-name>mvc</servlet-name>
   	 	<url-pattern>*.do</url-pattern>
   	 </servlet-mapping>
+  	 -->
+  	 <!-- member MVC 
+  	 <servlet>
+  	 	<servlet-name>mvc</servlet-name>
+  	 	<servlet-class>web.jsp0215.controller.MemberCtrler</servlet-class>
+  	 	<init-param>
+  	 		<param-name>propertiesPath</param-name>
+  	 		<param-value>E:\CJC\jsp\jspworkspace\web\WebContent\WEB-INF\properties\member.properties</param-value>
+  	 	</init-param>
+  	 </servlet>
+  	 <servlet-mapping>
+  	 	<servlet-name>mvc</servlet-name>
+  	 	<url-pattern>*.do</url-pattern>
+  	 </servlet-mapping>
+  	 <session-config>
+  	 	<tracking-mode>COOKIE</tracking-mode>
+  	 </session-config>
+  	 -->
+  	 <servlet>
+  	 	<servlet-name>mvc</servlet-name>
+  	 	<servlet-class>web.test.mvc.MainCtrler</servlet-class>
+  	 	<init-param>
+  	 		<param-name>propertiesPath</param-name>
+  	 		<param-value>E:\CJC\jsp\jspworkspace\web\WebContent\WEB-INF\properties\test.properties</param-value>
+  	 	</init-param>
+  	 </servlet>
+  	 <servlet-mapping>
+  	 	<servlet-name>mvc</servlet-name>
+  	 	<url-pattern>*.do</url-pattern>
+  	 </servlet-mapping>
+  	 
 </web-app>
